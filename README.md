@@ -11,5 +11,6 @@ The only external depencency needed is Arcade library (see [Instructions for Lin
 
 Clone the repository in your workspace and compile as usual.
 
-Run the simulation node with:
+Run the simulation node with the command:
+
 ```ros2 run sofar_crane_simulator crane_sim_node```
