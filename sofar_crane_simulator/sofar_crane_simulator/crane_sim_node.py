@@ -55,7 +55,7 @@ class CraneSimNode(Node):
         self.target_pub = self.create_publisher(Point, "/controller_setpoint", 10)
 
         # Utilities
-        self.lift_offset = 50
+        self.lift_offset = 75
 
     # Callback for setting position of motor x 
     def callback_motor_x(self, msg: Float64):
