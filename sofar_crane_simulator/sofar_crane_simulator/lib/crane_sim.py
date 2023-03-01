@@ -45,7 +45,7 @@ class CraneSimulation(arcade.Window):
         self.container_deposit_location = [X_OFFSET + 45, Y_OFFSET - (CRANE_MAX_Y + 15)]
         self.container_deposit_size = 80
 
-        self.base_share_directory = get_package_share_directory("crane_simulator")
+        self.base_share_directory = get_package_share_directory("sofar_crane_simulator")
         arcade.set_background_color(arcade.csscolor.WHITE)
 
     # Method to create base layer for the 2D world
