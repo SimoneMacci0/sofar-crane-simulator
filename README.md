@@ -17,4 +17,4 @@ Run the simulation node with the command:
 
 ## Troubleshooting
 
-As of ROS2 Humble, there is a weird bug which prevents the application from being lanuched correctly unless the ```import arcade``` statement is placed as first. Whatever changes you do in the code, make sure to always keep that import as first line of code.
+As of ROS2 Humble, there is a weird bug which prevents the application from being launched correctly unless the ```import arcade``` statement is placed as first. Whatever changes you do in the code, make sure to always keep that import as first line of code.
