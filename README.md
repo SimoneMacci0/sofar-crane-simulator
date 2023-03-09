@@ -14,3 +14,7 @@ Clone the repository in your workspace and compile as usual.
 Run the simulation node with the command:
 
 ```ros2 run sofar_crane_simulator crane_sim_node```
+
+## Troubleshooting
+
+As of ROS2 Humble, there is a weird bug which prevents the application from being lanuched correctly unless the ```import arcade``` statement is placed as first. Whatever changes you do in the code, make sure to always keep that import as first line of code.
