@@ -15,6 +15,11 @@ Run the simulation node with the command:
 
 ```ros2 run sofar_crane_simulator crane_sim_node```
 
+## Assignment
+
+You need to implement the following architecture
+![Architecture](sofar_crane_simulator/resource/SOFAR-assign1-architecture.png)
+
 ## Troubleshooting
 
 As of ROS2 Humble, there is a weird bug which prevents the application from being launched correctly unless the ```import arcade``` statement is placed as first. Whatever changes you do in the code, make sure to always keep that import as first line of code.
