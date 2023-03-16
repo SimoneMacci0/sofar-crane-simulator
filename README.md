@@ -1,5 +1,5 @@
 # sofar-crane-simulator
-First assignment for the SOFAR course. The project consists in a 2D simulation of a crane, developed with ROS2/Python, performing pick and place operations.
+First assignment for the SOFAR course. The project consists in a 2D simulation of a crane, performing pick and place operations. Implementation is done in ROS2/Python with the help of the Arcade library.
 
 ## Dependencies
 
