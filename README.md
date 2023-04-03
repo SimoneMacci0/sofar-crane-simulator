@@ -30,7 +30,7 @@ Good luck ;)
 
 ## Expected Output
 
-[](https://github.com/SimoneMacci0/sofar-crane-simulator.gif)
+[](https://github.com/SimoneMacci0/sofar-crane-simulator/blob/main/output.gif)
 
 ## Troubleshooting
 
