@@ -28,7 +28,7 @@ Each pick-and-place action begins with the PICK stage (thus you will need to pub
 
 ### Important Note
 
-**BEWARE: it is mandatory to rename your package before submission on AulaWeb (make sure to change the package name in the setup.py, package.xml and everywhere else where needed) according to the following template ->** *&lt;derp<surname&lt;derp>_&lt;derp<matricola&lt;derp>_crane_assignment*
+**BEWARE: it is mandatory to rename your package before submission on AulaWeb (make sure to change the package name in the setup.py, package.xml and everywhere else where needed) according to the following template ->** *&lt surname&lt;derp>_&lt;derp<matricola&lt;derp>_crane_assignment*
 
 Good luck ;)
 
