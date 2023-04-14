@@ -26,6 +26,8 @@ Each pick-and-place action begins with the PICK stage (thus you will need to pub
 
 ![Architecture](sofar_crane_simulator/resource/SOFAR-assign1-architecture.png)
 
+**BEWARE: it is mandatory to rename your package (make sure to change the package name in the setup.py, package.xml and everywhere else where needed) according to the following template -> <surname>_<matricola>_crane_assignment**
+
 Good luck ;)
 
 ## Expected Output
