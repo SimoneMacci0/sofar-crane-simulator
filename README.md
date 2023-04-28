@@ -1,5 +1,5 @@
 # sofar-crane-simulator
-First practical assignment for the SOFAR course. The project consists in a 2D simulation of a crane, developed with ROS2/Python, performing pick and place operations.
+First assignment for the SOFAR course. The project consists in a 2D simulation of a crane, performing pick and place operations. Implementation is done in ROS2/Python with the help of the Arcade library.
 
 ## Dependencies
 
@@ -14,6 +14,27 @@ Clone the repository in your workspace and compile as usual.
 Run the simulation node with the command:
 
 ```ros2 run sofar_crane_simulator crane_sim_node```
+
+## Assignment
+
+You need to implement the following architecture, made up of 4 nodes:
+1) The **simulation node** is already provided with this repository. It publishes a single topic (**/controller_setpoint**), which holds the (x,y) goal coordinates for the crane's end-effector. The controller setpoint depends on the current stage of the pick-and-place and a new setpoint is published whenever the simulation node receives messages on the **/next_stage** topic. You can easily inspect the various stages of the pick-and-place inside the source code of the simulation node. Finally, the node subscribes to **/motor_x** and **/motor_y** topics, which respectively hold the updated (x,y) end-effector coordinates returned by the control loop.
+2) The **controller nodes**, which implement a simple PID controller to control, respectively, the horizontal and vertical motor of the crane. Feel free to implement your own controller or use available ones (e.g., [simple-pid-python](https://pypi.org/project/simple-pid/)).
+The controllers receive the target position on the **/controller_setpoint** topic and activate the control loop to drive the crane's end-effector, publishing the corresponding updated position on their respective topic. Whenever the target position is reached, the control loop stops and the controller publishes an acknowledgment message on the corresponding topic.
+3) The **robot logic node**, which acts has *high-level controller*, guiding the crane through the stages of the pick-and-place. The node waits for both controllers to be idle, then publishes the next stage of the pick-and-place on the given topic. 
+Each pick-and-place action begins with the PICK stage (thus you will need to publish a **std_msgs/Int64** message with the data field set to 1) and concludes with the DROP stage, where the current container is delivered and a new one will spawn inside the simulation, increasing your overall score.
+
+![Architecture](sofar_crane_simulator/resource/SOFAR-assign1-architecture.png)
+
+### Important Note
+
+**BEWARE: it is mandatory to rename your package before submission on AulaWeb (make sure to change the package name in the *setup.py*, *package.xml* and everywhere else where needed) according to the following template &rarr;** *&lt;surname&gt;_&lt;matricola&gt;_assignment1* 
+
+Good luck ;)
+
+## Expected Output
+
+![https://github.com/SimoneMacci0/sofar-crane-simulator/output.gif](https://github.com/SimoneMacci0/sofar-crane-simulator/blob/main/output.gif)
 
 ## Troubleshooting
 
