@@ -25,7 +25,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'crane_sim_node = sofar_crane_simulator.crane_sim_node:main', 
+            'crane_sim_node = sofar_crane_simulator.crane_sim_node:main',
+            'motor_x_node = sofar_crane_simulator.motor_x_controller:main',
+            'motor_y_node = sofar_crane_simulator.motor_y_controller:main',
+            'robot_logic_node = sofar_crane_simulator.robot_logic:main'
         ],
     },
 )
